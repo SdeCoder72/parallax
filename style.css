@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #666;
+    padding: 0 15px;
+    margin-bottom: 5px;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background: rgb(8,7,7);
+    background: linear-gradient(59deg, rgba(8,7,7,1) 46%, rgba(41,39,59,1) 100%, rgba(7,8,8,1) 100%);
+    padding: 8px 5px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
+    
+}
+.web-dev {
+    width: 50%;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.nav {
+    width: 50%;
+}
+
+.nav_bar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    text-decoration: none;
+
+}
+li {
+    font-size: 20px;
+
+    list-style-type: none;
+    margin: 2px 10px;
+    padding: 0 15px;
+}
+li a {
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.img1 {
+    background-image: url(./images/web_dev.jpg);
+
+    width: 100%;
+    height: 90vh;
+}
+
+.img1, .img2, .img3, .img4, .img5 {
+    position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.img2{
+    background-image: url(./images/frontend.jpg);
+    width: 100%;
+    height: 80vh;
+}
+.img3 {
+    background-image: url(./images/backend.jpg);
+    width: 100%;
+    height: 80vh;
+}
+.img4 {
+    background-image: url(./images/full_stack.jpg);
+    width: 100%;
+    height: 80vh;
+}
+.img5 {
+    background-image: url(./images/ui_ux.jpg);
+    width: 100%;
+    height: 80vh;
+}
+
+
+
+.web_dev_text, .frontend_text, .backend_text, .full_stack_text, .ui_ux_text {
+    background: rgb(8,7,7);
+    background: linear-gradient(59deg, rgba(8,7,7,1) 46%, rgba(41,39,59,1) 100%, rgba(7,8,8,1) 100%);
+    color: #ada6a6;
+    padding: 10px 30px;
+    margin-top: 3px;
+}
+
+.text{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    /* left: 35vw; */
+    text-align: center;
+}
+.text span {
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 600;
+    padding: 8px 15px;
+    text-align: center;
+    text-transform: capitalize;
+    align-self: center;
+}
+.para {
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: justify;
+    margin-bottom: 7px;
+}
+.know_more {
+    padding: 3px 8px 3px 0;
+    margin-right: 11px;
+    text-decoration: none;
+    border-right: 2px solid #ada6a6;
+}
+.brd_none {
+    border: none;
+}
+
+
+
+@media screen and (max-width: 872px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: 19vh;
+        justify-content: space-around;
+    }
+    .web-dev {
+        width: 100%;
+        text-align: center;
+
+    }
+    .para {
+        font-size: 17px;
+    }
+    .nav {
+        width: 100%;
+    }
+    .nav_bar {
+        justify-content: space-around;
+        
+    }
+    .text {
+        position: absolute;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .web-dev {
+        font-size: 1.8rem;
+    }
+    li {
+        margin: 2px 2px;
+        padding: 0 3px;
+    }
+    li a {
+        font-size: 1rem;
+    }
+    .para {
+        font-size: 0.9rem;
+    }
+    .text span  {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 336px)  {
+    .web-dev {
+        font-size: 1.5rem;
+    }
+    li {
+        margin: 0 3px;
+        padding: 0 3px;
+    }
+    li a {
+        font-size: 0.9rem;
+    }
+    .para {
+        font-size: 0.9rem;
+        word-break:break-all;
+    }
+    .text span {
+        font-size: 1.4rem;
+    }
+
+}
+
+/* @media screen and (min-width: 1094px) {
+    .web-dev {
+        font-size: 3rem;
+    }
+    li {
+        margin: 0 3px;
+        padding: 0 3px;
+    }
+    li a {
+        font-size: 2rem;
+    }
+    .para {
+        font-size: 1.5rem;
+        word-break:break-all;
+        line-height: normal;
+    }
+    .text span {
+        font-size: 3rem;
+    }
+    
+} */
+/* @media screen and (min-width: 1500px) {
+    .web-dev {
+        font-size: 4rem;
+    }
+    li {
+        margin: 0 3px;
+        padding: 0 3px;
+    }
+    li a {
+        font-size: 2.7rem;
+    }
+    .para {
+        font-size: 1.9rem;
+        word-break:break-all;
+        line-height: normal;
+    }
+    .text span {
+        font-size: 4rem;
+    }
+    
+} */
